@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            
+            
+body{
+   background-color: #ffebee;
+ }
+.container{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+ }
+#solo{
+      font-size: 4em;
+          
+       font-weight: bold;
+       transition: all 0.2s; 
+       animation: anim 6s infinite;
+ }
+
+@keyframes anim{
+    0%        {color: #ea4c89; }
+    10.66%    {color: #42a5f5;
+              transform: rotate(1500deg);}
+    30.33%    {color: #26a69a; }
+    50%       {color: #2ccc65;
+               transform: rotate(0deg);
+               font-size: 5.5em}
+    66.66%     {color: #ea4c89;}
+    83.33%     {color: #ffa726; }
+    100%       {color: #d32f2f; }
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p id="solo">LOVE YOU</p>
+        </div>
+    </body>
+</html>
